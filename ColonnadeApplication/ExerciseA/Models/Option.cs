@@ -18,7 +18,7 @@ namespace ExerciseA.Models
         [NotNull]
         public int Luggage { get; set; }
         [NotNull]
-        public string LuggageLimit { get; set; }
+        public int LuggageLimit { get; set; }
         public ICollection<User> Users { get; set; }
     }
 }
