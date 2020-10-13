@@ -9,7 +9,5 @@ namespace ExerciseA.Models
     {
         public void AddUser(User newUser);
         public User GetUserById(int id);
-        public void UpdateUser(User user);
-        public void DeletUserById(int userId);
     }
 }

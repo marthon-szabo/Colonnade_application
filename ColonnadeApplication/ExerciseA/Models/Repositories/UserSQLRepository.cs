@@ -20,11 +20,6 @@ namespace ExerciseA.Models.Repositories
             await context.SaveChangesAsync();
         }
 
-        public async void DeletUserById(int userId)
-        {
-            throw new NotImplementedException();
-        }
-
         public User GetUserById(int id)
         {
             throw new NotImplementedException();
