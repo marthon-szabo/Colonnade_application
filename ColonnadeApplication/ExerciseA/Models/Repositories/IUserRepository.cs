@@ -7,7 +7,7 @@ namespace ExerciseA.Models
 {
     public interface IUserRepository
     {
-        public void AddUser(User newUser);
-        public User GetUserById(int id);
+        public void AddUserAsync(User newUser);
+        public Task<User> GetUserByIdAsync(int id);
     }
 }

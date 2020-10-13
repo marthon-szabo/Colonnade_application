@@ -14,20 +14,15 @@ namespace ExerciseA.Models.Repositories
             this.context = context;
         }
 
-        public async void AddUser(User newUser)
+        public async void AddUserAsync(User newUser)
         {
             context.Users.Add(newUser);
             await context.SaveChangesAsync();
         }
 
-        public User GetUserById(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateUser(User user)
-        {
-            throw new NotImplementedException();
+            return await context.Users.FindAsync(id);
         }
     }
 }
