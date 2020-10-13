@@ -16,7 +16,7 @@ namespace ExerciseA.Models.Repositories
 
         public async void AddUserAsync(User newUser)
         {
-            context.Users.Add(newUser);
+            await context.Users.AddAsync(newUser);
             await context.SaveChangesAsync();
         }
 
