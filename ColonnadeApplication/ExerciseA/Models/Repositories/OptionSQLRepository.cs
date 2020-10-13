@@ -14,12 +14,12 @@ namespace ExerciseA.Models.Repositories
             this.context = context;
         }
 
-        public void AddOptionAsync(Options option)
+        public async void AddOptionAsync(Option option)
         {
-            throw new NotImplementedException();
+            await context.Options.AddAsync(option);
         }
 
-        public Task<Options> GetOptionByIdAsync(Options option)
+        public Task<Option> GetOptionByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
