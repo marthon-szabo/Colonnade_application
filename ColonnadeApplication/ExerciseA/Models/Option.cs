@@ -9,9 +9,6 @@ namespace ExerciseA.Models
         public int Id { get; set; }
 
         [NotNull]
-        public string Type { get; set; }
-
-        [NotNull]
         public int AccidentInsuranceLimit { get; set; }
 
         [NotNull]
