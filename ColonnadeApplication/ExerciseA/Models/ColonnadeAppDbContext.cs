@@ -19,7 +19,17 @@ namespace ExerciseA.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            #region UsersOption join table
+            modelBuilder.Entity<UsersOption>()
+                .HasOne(uOpt => uOpt.Option)
+                .WithMany(o => o.UsersOptions)
+                .HasForeignKey(uOpt => uOpt.OptionId);
             
+            modelBuilder.Entity<UsersOption>()
+                .HasOne(uOpt => uOpt.User)
+                .WithOne(u => u.Option)
+                .HasForeignKey(uOpt => uOpt.);
+            #endregion
         }
     }
 }
