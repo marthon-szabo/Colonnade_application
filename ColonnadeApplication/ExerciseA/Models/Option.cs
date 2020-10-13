@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ExerciseA.Models
@@ -17,5 +19,6 @@ namespace ExerciseA.Models
         public int Luggage { get; set; }
         [NotNull]
         public string LuggageLimit { get; set; }
+        public ICollection<UsersOption> UsersOptions { get; set; }
     }
 }
