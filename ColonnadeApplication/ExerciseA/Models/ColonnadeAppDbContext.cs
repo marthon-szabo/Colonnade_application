@@ -15,20 +15,22 @@ namespace ExerciseA.Models
 
         public DbSet<User> Users { get; set; }
         public DbSet<Option> Options { get; set; }
-        public DbSet<UsersOption> UsersOptions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            #region UsersOption join table
-            modelBuilder.Entity<UsersOption>()
-                .HasOne(uOpt => uOpt.Option)
-                .WithMany(o => o.UsersOptions)
-                .HasForeignKey(uOpt => uOpt.OptionId);
-            
-            modelBuilder.Entity<UsersOption>()
-                .HasOne(uOpt => uOpt.User)
-                .WithOne(u => u.Option)
-                .HasForeignKey(uOpt => uOpt.);
+            #region Create connetction
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Option)
+                .WithMany(o => o.Users);
+            #endregion
+
+            #region Seed Options table
+            modelBuilder.Entity<Option>().HasData(
+                    new Standard(),
+                    new Optimal(),
+                    new Medium(),
+                    new Extra()
+                );
             #endregion
         }
     }

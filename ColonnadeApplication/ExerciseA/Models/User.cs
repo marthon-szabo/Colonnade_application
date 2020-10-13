@@ -33,6 +33,6 @@ namespace ExerciseA.Models
         public string Email { get; set; }
 
         [NotNull]
-        public UsersOption Option { get; set; }
+        public Option Option { get; set; }
     }
 }
