@@ -16,5 +16,10 @@ namespace ExerciseA.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Option> Options { get; set; }
         public DbSet<UsersOption> UsersOptions { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            
+        }
     }
 }
