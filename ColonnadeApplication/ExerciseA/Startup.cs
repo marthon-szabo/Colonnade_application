@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ExerciseA.Models;
+using ExerciseA.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,7 @@ namespace ExerciseA
                 options.UseSqlServer(Configuration.GetConnectionString("ColonnadeDBConnection"));
             });
             services.AddControllersWithViews();
+            services.AddSingleton<IUserRepository, UserSQLRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
