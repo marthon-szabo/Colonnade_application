@@ -14,18 +14,18 @@ namespace ExerciseA.Models.Factories
             this.context = context;
         }
 
-        public Option CreateOption(string type)
+        public int? CreateOption(string type)
         {
             switch (type)
             {
                 case "Optimal":
-                    return context.Options.Find(1);
+                    return 1;
                 case "Extra":
-                    return context.Options.Find(2);
+                    return 2;
                 case "Medium":
-                    return context.Options.Find(3);
+                    return 3;
                 case "Standard":
-                    return context.Options.Find(4);
+                    return 4;
                 default:
                     return null;
             }

@@ -1,5 +1,6 @@
 ﻿using ExerciseA.Models.Factories;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,13 @@ namespace ExerciseA.Models
 
         public async Task<User> CreateUserAsync(string email, string name, string address, string phone, string city, string option, int zip)
         {
-            Option userOption = optionsFactory.CreateOption(option);
+            int? userOption = optionsFactory.CreateOption(option);
+            
+            if (userOption == null)
+            {
+                throw new ArgumentNullException("There is no argument for Option!");
+            }
+
             User newUser = new User
             {
                 Address = address,
@@ -29,12 +36,12 @@ namespace ExerciseA.Models
                 Zip = zip,
                 Name = name,
                 Phone = phone,
-                Option = userOption
+                OptionId = userOption
             };
 
             userOption.Users.Add(newUser);
             context.SaveChanges();
-            
+
             return newUser;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,10 +15,10 @@ namespace ExerciseA.Models.Repositories
             this.context = context;
         }
 
-        public async void AddUserAsync(User newUser)
+        public void AddUserAsync(User newUser)
         {
-            await context.Users.AddAsync(newUser);
-            await context.SaveChangesAsync();
+            context.Users.AddAsync(newUser);
+            context.SaveChangesAsync();
         }
 
         public async Task<User> GetUserByIdAsync(int id)

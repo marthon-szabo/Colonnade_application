@@ -7,6 +7,6 @@ namespace ExerciseA.Models.Factories
 {
     public interface IOptionFactory
     {
-        public Option CreateOption(String type);
+        public int? CreateOption(String type);
     }
 }

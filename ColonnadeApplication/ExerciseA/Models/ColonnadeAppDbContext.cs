@@ -18,9 +18,11 @@ namespace ExerciseA.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
+
             #region Create connetction
             modelBuilder.Entity<User>()
-                .HasOne(u => u.Option)
+                .HasOne(u => u.OptionId)
                 .WithMany(o => o.Users);
             #endregion
 
