@@ -39,9 +39,6 @@ namespace ExerciseA.Models
                 OptionId = userOption
             };
 
-            userOption.Users.Add(newUser);
-            context.SaveChanges();
-
             return newUser;
         }
     }

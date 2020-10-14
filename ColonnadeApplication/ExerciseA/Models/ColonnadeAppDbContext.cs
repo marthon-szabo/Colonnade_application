@@ -19,12 +19,12 @@ namespace ExerciseA.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             
-
-            #region Create connetction
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.OptionId)
-                .WithMany(o => o.Users);
-            #endregion
+            // TODO: Resolve this commented section!
+            //#region Create connetction
+            //modelBuilder.Entity<User>()
+            //    .HasOne(u => u.OptionId)
+            //    .WithMany(o => o.Users);
+            //#endregion
 
             #region Seed Options table
             modelBuilder.Entity<Option>().HasData(

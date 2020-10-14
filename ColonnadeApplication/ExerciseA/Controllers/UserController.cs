@@ -32,9 +32,8 @@ namespace ExerciseA.Controllers
         public IActionResult Actual(string id)
         {
             User user = userRepo.GetUserByIdAsync(Convert.ToInt32(id)).Result;
-            Option option = user.OptionId;
-            string optName = option.OptName;
-            ViewData["OptName"] = optName;
+            int? option = user.OptionId;
+            ViewData["OptName"] = option;
             return View(user);
         }
     }
