@@ -20,7 +20,7 @@ namespace ExerciseA.Models.Repositories
             await context.SaveChangesAsync();
         }
 
-        public async Task<Option> GetOptionByIdAsync(int id)
+        public async Task<Option> GetOptionByIdAsync(int? id)
         {
             return await context.Options.FindAsync(id);
         }

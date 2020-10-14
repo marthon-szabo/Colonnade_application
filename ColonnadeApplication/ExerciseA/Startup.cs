@@ -33,6 +33,7 @@ namespace ExerciseA
             });
             services.AddControllersWithViews();
             services.AddTransient<IUserRepository, UserSQLRepository>();
+            services.AddTransient<IOptionRepository, OptionSQLRepository>();
             services.AddTransient<IUserFactory, UserFactory>();
             services.AddTransient<IOptionFactory, OptionFactory>();
         }

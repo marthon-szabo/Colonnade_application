@@ -12,11 +12,13 @@ namespace ExerciseA.Controllers
     public class UserController : Controller
     {
         private readonly IUserRepository userRepo;
+        private readonly IOptionRepository optionRepo;
         private readonly IUserFactory userFactory;
 
-        public UserController(IUserRepository userRepo, IUserFactory userFactory)
+        public UserController(IUserRepository userRepo, IOptionRepository optionRepo, IUserFactory userFactory)
         {
             this.userRepo = userRepo;
+            this.optionRepo = optionRepo;
             this.userFactory = userFactory;
         }
 
@@ -32,8 +34,10 @@ namespace ExerciseA.Controllers
         public IActionResult Actual(string id)
         {
             User user = userRepo.GetUserByIdAsync(Convert.ToInt32(id)).Result;
-            int? option = user.OptionId;
-            ViewData["OptName"] = option;
+            int? optionId = user.OptionId;
+            Option option = optionRepo.GetOptionByIdAsync(optionId).Result;
+            ViewData["OptName"] = option.OptName;
+            
             return View(user);
         }
     }

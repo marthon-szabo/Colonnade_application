@@ -17,11 +17,11 @@ namespace ExerciseA.Models.Repositories
 
         public void AddUserAsync(User newUser)
         {
-            context.Users.AddAsync(newUser);
-            context.SaveChangesAsync();
+            context.Users.Add(newUser);
+            context.SaveChanges();
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int? id)
         {
             return await context.Users.FindAsync(id);
         }
