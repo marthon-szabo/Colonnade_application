@@ -18,7 +18,7 @@ namespace ExerciseA.Models
             this.context = context;
         }
 
-        public async Task<User> CreateUserAsync(string email, string name, string address, string city, string option, int zip)
+        public async Task<User> CreateUserAsync(string email, string name, string address, string phone, string city, string option, int zip)
         {
             Option userOption = optionsFactory.CreateOption(option);
             User newUser = new User
@@ -28,7 +28,7 @@ namespace ExerciseA.Models
                 Email = email,
                 Zip = zip,
                 Name = name,
-                Phone = 123,
+                Phone = phone,
                 Option = userOption
             };
 

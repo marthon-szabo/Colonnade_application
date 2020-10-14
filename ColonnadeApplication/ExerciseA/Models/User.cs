@@ -26,7 +26,7 @@ namespace ExerciseA.Models
 
         [NotNull]
         [Phone]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
 
         [NotNull]
         [EmailAddress]
@@ -34,5 +34,6 @@ namespace ExerciseA.Models
 
         [NotNull]
         public Option Option { get; set; }
+
     }
 }

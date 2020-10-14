@@ -20,9 +20,9 @@ namespace ExerciseA.Controllers
             this.userFactory = userFactory;
         }
 
-        public async Task<IActionResult> Create(string email, string name, string address, string city, string option, int zip)
+        public async Task<IActionResult> Create(string email, string name, string address, string phone, string city, string option, int zip)
         {
-            var newUser = await userFactory.CreateUserAsync(email, name, address, city, option, zip);
+            var newUser = await userFactory.CreateUserAsync(email, name, address, phone, city, option, zip);
             userRepo.AddUserAsync(newUser);
             return View();
         }
