@@ -4,14 +4,16 @@ using ExerciseA.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ExerciseA.Migrations
 {
     [DbContext(typeof(ColonnadeAppDbContext))]
-    partial class ColonnadeAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201014123237_AddNamePropertyToOption")]
+    partial class AddNamePropertyToOption
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
