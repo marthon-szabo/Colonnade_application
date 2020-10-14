@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ExerciseA.Models;
+using ExerciseA.Models.Factories;
 using ExerciseA.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,8 @@ namespace ExerciseA
             });
             services.AddControllersWithViews();
             services.AddSingleton<IUserRepository, UserSQLRepository>();
+            services.AddSingleton<IUserFactory, UserFactory>();
+            services.AddSingleton<IOptionFactory, OptionFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
