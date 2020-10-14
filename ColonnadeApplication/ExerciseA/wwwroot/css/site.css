@@ -88,6 +88,22 @@ body {
     display: block;
 }
 
+#user-question-mark {
+    color: red;
+}
+
+#user-question-mark:hover {
+    cursor: pointer;
+}
+
+#user-question-mark:hover + #user-option-table {
+    cursor: pointer;
+    display: inline-table;
+}
+
+#user-option-table {
+    display: none;
+}
 
 @media screen and (min-width: 1100px) {
     .options {

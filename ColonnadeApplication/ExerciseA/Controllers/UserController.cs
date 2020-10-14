@@ -37,6 +37,10 @@ namespace ExerciseA.Controllers
             int? optionId = user.OptionId;
             Option option = optionRepo.GetOptionByIdAsync(optionId).Result;
             ViewData["OptName"] = option.OptName;
+            ViewData["AcInsLimit"] = option.AccidentInsuranceLimit.ToString("###,###,### Ft");
+            ViewData["Cash"] = option.Cash.ToString("###,###,### Ft");
+            ViewData["Luggage"] = option.Luggage.ToString("###,###,### Ft");
+            ViewData["LuggageLimit"] = option.LuggageLimit.ToString("###,###,### Ft");
             
             return View(user);
         }
