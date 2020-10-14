@@ -22,9 +22,16 @@ namespace ExerciseA.Controllers
 
         public async Task<IActionResult> Create(string email, string name, string address, string phone, string city, string option, int zip)
         {
-            var newUser = await userFactory.CreateUserAsync(email, name, address, phone, city, option, zip);
+            User newUser = userFactory.CreateUserAsync(email, name, address, phone, city, option, zip).Result;
             userRepo.AddUserAsync(newUser);
+            Response.Redirect($"/User/Actual?id={newUser.Id}");
+
             return View();
+        }
+
+        public IActionResult Actual(string id)
+        {
+            return View(userRepo.GetUserByIdAsync(Convert.ToInt32(id)).Result);
         }
     }
 }
