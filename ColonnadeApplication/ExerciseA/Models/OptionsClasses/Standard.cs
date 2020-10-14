@@ -7,7 +7,7 @@ namespace ExerciseA.Models
 {
     public sealed class Standard : Options
     {
-        public Standard() : base(4, 50000000, 0, 0, 200000000)
+        public Standard() : base(4, 50000000, 0, 0, 200000000, "Standard")
         {
         }
     }

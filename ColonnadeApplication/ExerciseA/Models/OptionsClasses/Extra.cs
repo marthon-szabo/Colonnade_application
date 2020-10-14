@@ -7,7 +7,7 @@ namespace ExerciseA.Models
 {
     public sealed class Extra : Options
     {
-        public Extra() : base(2, 150000000, 100000, 100000, 200000000)
+        public Extra() : base(2, 150000000, 100000, 100000, 200000000, "Extra")
         {
         }
     }
