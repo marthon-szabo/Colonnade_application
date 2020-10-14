@@ -29,6 +29,6 @@ namespace ExerciseA.Models
         public int Cash { get => _cash;}
         public int Luggage { get => _luggage;}
         public int LuggageLimit { get => _luggageLimit;}
-        public string Name { get => _name;}
+        public string OptName { get => _name;}
     }
 }
