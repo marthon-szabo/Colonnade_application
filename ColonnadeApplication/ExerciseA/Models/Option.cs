@@ -12,6 +12,8 @@ namespace ExerciseA.Models
         public int Id { get; set; }
 
         [NotNull]
+        public string Name { get; set; }
+        [NotNull]
         public int AccidentInsuranceLimit { get; set; }
 
         [NotNull]
