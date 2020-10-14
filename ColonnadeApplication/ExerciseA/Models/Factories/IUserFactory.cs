@@ -8,6 +8,6 @@ namespace ExerciseA.Models
 {
     public interface IUserFactory
     {
-        public Task<User> CreateUserAsync(FormCollection form);
+        public Task<User> CreateUserAsync(string email, string name, string address, string city, string option, int zip);
     }
 }

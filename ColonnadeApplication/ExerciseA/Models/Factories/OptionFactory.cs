@@ -19,13 +19,13 @@ namespace ExerciseA.Models.Factories
             switch (type)
             {
                 case "Optimal":
-                    return context.Options.Find("Optimal");
+                    return context.Options.Find(1);
                 case "Extra":
-                    return context.Options.Find("Extra");
+                    return context.Options.Find(2);
                 case "Medium":
-                    return context.Options.Find("Medium");
+                    return context.Options.Find(3);
                 case "Standard":
-                    return context.Options.Find("Standard");
+                    return context.Options.Find(4);
                 default:
                     return null;
             }

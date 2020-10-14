@@ -32,9 +32,9 @@ namespace ExerciseA
                 options.UseSqlServer(Configuration.GetConnectionString("ColonnadeDBConnection"));
             });
             services.AddControllersWithViews();
-            services.AddSingleton<IUserRepository, UserSQLRepository>();
-            services.AddSingleton<IUserFactory, UserFactory>();
-            services.AddSingleton<IOptionFactory, OptionFactory>();
+            services.AddTransient<IUserRepository, UserSQLRepository>();
+            services.AddTransient<IUserFactory, UserFactory>();
+            services.AddTransient<IOptionFactory, OptionFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

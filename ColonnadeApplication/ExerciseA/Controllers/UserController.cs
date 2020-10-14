@@ -12,15 +12,18 @@ namespace ExerciseA.Controllers
     public class UserController : Controller
     {
         private readonly IUserRepository userRepo;
+        private readonly IUserFactory userFactory;
 
-        public UserController(IUserRepository userRepo)
+        public UserController(IUserRepository userRepo, IUserFactory userFactory)
         {
             this.userRepo = userRepo;
+            this.userFactory = userFactory;
         }
 
-        public async Task<IActionResult> Create(FormCollection form)
+        public async Task<IActionResult> Create(string email, string name, string address, string city, string option, int zip)
         {
-            
+            var newUser = await userFactory.CreateUserAsync(email, name, address, city, option, zip);
+            userRepo.AddUserAsync(newUser);
             return View();
         }
     }

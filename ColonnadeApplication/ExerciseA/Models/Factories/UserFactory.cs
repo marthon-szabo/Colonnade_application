@@ -18,21 +18,21 @@ namespace ExerciseA.Models
             this.context = context;
         }
 
-        public async Task<User> CreateUserAsync(FormCollection form)
+        public async Task<User> CreateUserAsync(string email, string name, string address, string city, string option, int zip)
         {
-            Option option = optionsFactory.CreateOption(form["Option"]);
+            Option userOption = optionsFactory.CreateOption(option);
             User newUser = new User
             {
-                Address = form["Address"],
-                City = form["City"],
-                Email = form["Email"],
-                Zip = Convert.ToInt32(form["Zip"]),
-                Name = form["Name"],
-                Phone = Convert.ToInt32(form["Phone"]),
-                Option = option
+                Address = address,
+                City = city,
+                Email = email,
+                Zip = zip,
+                Name = name,
+                Phone = 123,
+                Option = userOption
             };
 
-            option.Users.Add(newUser);
+            userOption.Users.Add(newUser);
             context.SaveChanges();
             
             return newUser;

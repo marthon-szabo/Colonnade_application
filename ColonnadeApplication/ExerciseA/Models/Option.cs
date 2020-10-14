@@ -7,6 +7,7 @@ namespace ExerciseA.Models
 {
     public class Option
     {
+        private ICollection<User> _users = new List<User>();
         [Key]
         public int Id { get; set; }
 
@@ -19,6 +20,6 @@ namespace ExerciseA.Models
         public int Luggage { get; set; }
         [NotNull]
         public int LuggageLimit { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<User> Users { get => _users; }
     }
 }
