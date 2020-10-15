@@ -14,7 +14,7 @@ namespace ExerciseA.Models.Factories
             this.context = context;
         }
 
-        public int? CreateOption(string type)
+        public int CreateOption(string type)
         {
             switch (type)
             {
@@ -27,7 +27,7 @@ namespace ExerciseA.Models.Factories
                 case "Standard":
                     return 4;
                 default:
-                    return null;
+                    return 4;
             }
         }
     }

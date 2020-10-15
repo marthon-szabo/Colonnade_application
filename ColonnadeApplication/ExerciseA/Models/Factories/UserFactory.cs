@@ -21,7 +21,7 @@ namespace ExerciseA.Models
 
         public async Task<User> CreateUserAsync(string email, string name, string address, string phone, string city, string option, int zip)
         {
-            int? userOption = optionsFactory.CreateOption(option);
+            int userOption = optionsFactory.CreateOption(option);
             
             if (userOption == null)
             {

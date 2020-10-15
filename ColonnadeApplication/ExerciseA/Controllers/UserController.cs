@@ -34,7 +34,7 @@ namespace ExerciseA.Controllers
         public IActionResult Actual(string id)
         {
             User user = userRepo.GetUserByIdAsync(Convert.ToInt32(id)).Result;
-            int? optionId = user.OptionId;
+            int optionId = user.OptionId;
             Option option = optionRepo.GetOptionByIdAsync(optionId).Result;
             ViewData["OptName"] = option.OptName;
             ViewData["AcInsLimit"] = option.AccidentInsuranceLimit.ToString("###,###,### Ft");
