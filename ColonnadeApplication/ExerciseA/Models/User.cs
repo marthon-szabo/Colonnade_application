@@ -12,27 +12,28 @@ namespace ExerciseA.Models
         [Key]
         public int Id { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         public string Name { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         public int Zip { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         public string City { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         public string Address { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         [Phone]
         public string Phone { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         [EmailAddress]
         public string Email { get; set; }
 
-        [NotNull]
+        // TODO: Not nullable!
+        [DisallowNull]
         public int? OptionId { get; set; }
 
     }

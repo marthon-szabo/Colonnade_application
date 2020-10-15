@@ -1,0 +1,50 @@
+{
+  "name": "ColonnadeExerciseB",
+  "description": "Set the UI test automatisation for exercise a",
+  "main": "Main.xaml",
+  "dependencies": {
+    "BalaReva.Excel.Activities": "[2020.3.0]",
+    "Castle.Core": "4.4.1",
+    "ClosedXML": "[0.95.3]",
+    "ExcelDataReader": "[3.6.0]",
+    "MailKit": "[2.9.0]",
+    "Mastek.Email.Activities": "[1.0.9]",
+    "Microsoft.Activities.Extensions": "[2.0.6.9]",
+    "Microsoft.Exchange.WebServices": "[2.2.0]",
+    "UiPath.ComplexScenarios.Activities": "[1.1.3]",
+    "UiPath.Excel.Activities": "[2.9.3]",
+    "UiPath.Form.Activities": "[1.1.7]",
+    "UiPath.Mail.Activities": "[1.9.3]",
+    "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.UIAutomation.Activities": "20.10.5",
+    "UiPath.UIAutomationNext.Activities": "[20.4.3]",
+    "UiPath.Word.Activities": "[1.5.3]",
+    "UiPathTeam.DynamicEmail.Activity": "[1.0.3]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.4.3.0",
+  "projectVersion": "1.0.5",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": []
+  },
+  "expressionLanguage": "VisualBasic"
+}
