@@ -26,9 +26,9 @@ namespace ExerciseA.Controllers
         {
             User newUser = userFactory.CreateUser(email, name, address, phone, city, option, zip);
             userRepo.AddUser(newUser);
-            Response.Redirect($"/User/Actual?id={newUser.Id}");
 
-            return View();
+            return RedirectToAction("Actual", new { id = newUser.Id });
+        
         }
 
         public IActionResult Actual(string id)
