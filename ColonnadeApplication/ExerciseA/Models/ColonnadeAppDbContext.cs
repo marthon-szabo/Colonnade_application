@@ -18,8 +18,6 @@ namespace ExerciseA.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
-
             #region Seed Options table
             modelBuilder.Entity<Option>().HasData(
                     new Standard(),
