@@ -19,15 +19,10 @@ namespace ExerciseA.Models
             this.context = context;
         }
 
-        public async Task<User> CreateUserAsync(string email, string name, string address, string phone, string city, string option, int zip)
+        public User CreateUser(string email, string name, string address, string phone, string city, string option, int zip)
         {
             int userOption = optionsFactory.CreateOption(option);
             
-            if (userOption == null)
-            {
-                throw new ArgumentNullException("There is no argument for Option!");
-            }
-
             User newUser = new User
             {
                 Address = address,

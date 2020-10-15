@@ -15,15 +15,15 @@ namespace ExerciseA.Models.Repositories
             this.context = context;
         }
 
-        public void AddUserAsync(User newUser)
+        public void AddUser(User newUser)
         {
             context.Users.Add(newUser);
             context.SaveChanges();
         }
 
-        public async Task<User> GetUserByIdAsync(int? id)
+        public User GetUserById(int? id)
         {
-            return await context.Users.FindAsync(id);
+            return context.Users.Find(id);
         }
     }
 }
