@@ -14,15 +14,15 @@ namespace ExerciseA.Models.Repositories
             this.context = context;
         }
 
-        public async void AddOptionAsync(Option option)
+        public void AddOption(Option option)
         {
-            context.Options.AddAsync(option);
-            await context.SaveChangesAsync();
+            context.Options.Add(option);
+            context.SaveChanges();
         }
 
-        public async Task<Option> GetOptionByIdAsync(int? id)
+        public Option GetOptionById(int? id)
         {
-            return await context.Options.FindAsync(id);
+            return context.Options.Find(id);
         }
     }
 }

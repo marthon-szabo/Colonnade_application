@@ -130,6 +130,15 @@
           "lib/net40/DocX.dll": {}
         }
       },
+      "Email_Address_Validation.Activities/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/Email Address Validation Activity.dll": {}
+        }
+      },
       "ExcelDataReader/3.6.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -640,11 +649,10 @@
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.Graph/1.12.0": {
+      "Microsoft.Graph/1.19.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Graph.Core": "1.12.0",
-          "Newtonsoft.Json": "[6.0.1, 12.0.0)"
+          "Microsoft.Graph.Core": "1.18.0"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -658,10 +666,12 @@
           "lib/net45/Microsoft.Graph.dll": {}
         }
       },
-      "Microsoft.Graph.Core/1.12.0": {
+      "Microsoft.Graph.Core/1.19.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "[6.0.1, 12.0.0)"
+          "Newtonsoft.Json": "6.0.1",
+          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.ValueTuple": "4.3.0"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -807,6 +817,16 @@
           "lib/net45/NPOI.dll": {}
         }
       },
+      "Outlook.Mail.Activities/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/MailMessage.Designer.dll": {},
+          "lib/MailMessage.dll": {}
+        }
+      },
       "Portable.BouncyCastle/1.8.5": {
         "type": "package",
         "compile": {
@@ -857,6 +877,22 @@
         },
         "runtime": {
           "lib/net461/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "System.IO.Abstractions/3.0.10": {
@@ -1652,7 +1688,7 @@
           }
         }
       },
-      "UiPath.MicrosoftOffice365.Activities/1.3.0": {
+      "UiPath.MicrosoftOffice365.Activities/1.4.0": {
         "type": "package",
         "dependencies": {
           "BouncyCastle": "1.8.2",
@@ -1660,14 +1696,14 @@
           "DocumentFormat.OpenXml": "2.7.2",
           "ExcelNumberFormat": "1.0.3",
           "FastMember": "1.3.0",
-          "Microsoft.Graph": "1.12.0",
-          "Microsoft.Graph.Core": "1.12.0",
-          "Microsoft.Identity.Client": "2.7.1",
+          "Microsoft.Graph": "1.19.0",
+          "Microsoft.Graph.Core": "1.19.0",
+          "Microsoft.Identity.Client": "4.14.0",
           "MimeKit": "2.1.3",
           "Newtonsoft.Json": "10.0.3",
           "System.IO.FileSystem.Primitives": "4.0.1",
           "System.IO.Packaging": "4.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "frameworkAssemblies": [
           "PresentationCore",
@@ -2704,6 +2740,17 @@
         "lib/net40/DocX.dll"
       ]
     },
+    "Email_Address_Validation.Activities/1.0.0": {
+      "sha512": "tvgJmco0BAnoOiqEJakPDpMu4F2aIhmGz3E/TzGnKzjSolm+xnz/iMPOvUSv8EE1cGaQ5/GIFOM+jhehFboS1w==",
+      "type": "package",
+      "path": "email_address_validation.activities/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "email_address_validation.activities.1.0.0.nupkg.sha512",
+        "email_address_validation.activities.nuspec",
+        "lib/Email Address Validation Activity.dll"
+      ]
+    },
     "ExcelDataReader/3.6.0": {
       "sha512": "eXyxTwG7EEWpgQX3juZ2KcndqTqm/ydx9GXS2lUiMJU54U4h5eXdygRtVgINv0t60ezPWEb+lL7uM7Q+wm5BBA==",
       "type": "package",
@@ -3453,33 +3500,39 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
-    "Microsoft.Graph/1.12.0": {
-      "sha512": "DSgbTfqHHVDB7ceIIgtcsuaoN06IqgBDaLsvQov8Lw91BGee5qDMZHPPH6v7VqmIkKBZF3/EcwbgosIlG65edA==",
+    "Microsoft.Graph/1.19.0": {
+      "sha512": "cxafootOA8OqGw/y4Dl5hFKrsrei8Hm9YImt6jaoTYY+KCid1Yv87MiNk38M3arNbvmtY5T81siR0qHTFgLZ8Q==",
       "type": "package",
-      "path": "microsoft.graph/1.12.0",
+      "path": "microsoft.graph/1.19.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.txt",
         "lib/net45/Microsoft.Graph.dll",
         "lib/net45/Microsoft.Graph.xml",
-        "lib/netstandard1.1/Microsoft.Graph.dll",
-        "lib/netstandard1.1/Microsoft.Graph.xml",
-        "microsoft.graph.1.12.0.nupkg.sha512",
+        "lib/netstandard1.3/Microsoft.Graph.dll",
+        "lib/netstandard1.3/Microsoft.Graph.xml",
+        "microsoft.graph.1.19.0.nupkg.sha512",
         "microsoft.graph.nuspec"
       ]
     },
-    "Microsoft.Graph.Core/1.12.0": {
-      "sha512": "iG4S+eUng09zF9JQcGGnXxDca3hAseT/a1u2Mz2sjNS62C9oahMvD0soj2cp0Q6adliVx/giXyD9o/TGho+BtQ==",
+    "Microsoft.Graph.Core/1.19.0": {
+      "sha512": "t+PooSxwq2vJLJUENDCTOZc8KEC0T1Y5QxlvLp2idqkL/Rv+fvOPAhEvGMexJJIEWWt8yAnRl8PrS9BWR80/cg==",
       "type": "package",
-      "path": "microsoft.graph.core/1.12.0",
+      "path": "microsoft.graph.core/1.19.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.txt",
+        "lib/monoandroid70/Microsoft.Graph.Core.dll",
+        "lib/monoandroid70/Microsoft.Graph.Core.xml",
         "lib/net45/Microsoft.Graph.Core.dll",
         "lib/net45/Microsoft.Graph.Core.xml",
         "lib/netstandard1.1/Microsoft.Graph.Core.dll",
         "lib/netstandard1.1/Microsoft.Graph.Core.xml",
-        "microsoft.graph.core.1.12.0.nupkg.sha512",
+        "lib/xamarinios10/Microsoft.Graph.Core.dll",
+        "lib/xamarinios10/Microsoft.Graph.Core.xml",
+        "microsoft.graph.core.1.19.0.nupkg.sha512",
         "microsoft.graph.core.nuspec"
       ]
     },
@@ -3708,6 +3761,19 @@
         "npoi.nuspec"
       ]
     },
+    "Outlook.Mail.Activities/1.0.2": {
+      "sha512": "XbE7mIP09u/zk+sy+drHN2ztNPNUVcm6yugbGNl43Ybm9hPA0tdNaDY7QKdzltqtN2BYaIUN7mo+/rs+DsJb1Q==",
+      "type": "package",
+      "path": "outlook.mail.activities/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "images/mail.ico",
+        "lib/MailMessage.Designer.dll",
+        "lib/MailMessage.dll",
+        "outlook.mail.activities.1.0.2.nupkg.sha512",
+        "outlook.mail.activities.nuspec"
+      ]
+    },
     "Portable.BouncyCastle/1.8.5": {
       "sha512": "EaCgmntbH1sOzemRTqyXSqYjB6pLH7VCYHhhDYZ59guHSD5qPwhIYa7kfy0QUlmTRt9IXhaXdFhNuBUArp70Ng==",
       "type": "package",
@@ -3882,6 +3948,31 @@
         "ref/xamarinwatchos10/_._",
         "system.componentmodel.annotations.4.7.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.6.0": {
+      "sha512": "mbBgoR0rRfl2uimsZ2avZY8g7Xnh1Mza0rJZLPcxqiMWlkGukjmRkuMJ/er+AhQuiRIh80CR/Hpeztr80seV5g==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -4771,10 +4862,10 @@
         "uipath.mail.activities.nuspec"
       ]
     },
-    "UiPath.MicrosoftOffice365.Activities/1.3.0": {
-      "sha512": "GKY4YlJ/tAPee9COZV4G8aKyUJmdJ6vtLzY+XgM7wVOVA7bXUD+eStD4xGYRyFPBI3Kfnx/D74zsUOGXIw7ilg==",
+    "UiPath.MicrosoftOffice365.Activities/1.4.0": {
+      "sha512": "vR/BVKGnmIui9CkkiYbMzUULmnmWyzdVo+lebHhZH2FlTnehZkfR9fn1px8gqR5SqM9st/iIXlY22Dhm9wUcvQ==",
       "type": "package",
-      "path": "uipath.microsoftoffice365.activities/1.3.0",
+      "path": "uipath.microsoftoffice365.activities/1.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4806,7 +4897,7 @@
         "lib/net461/tr/UiPath.MicrosoftOffice365.Activities.resources.dll",
         "lib/net461/zh-CN/UiPath.MicrosoftOffice365.Activities.Design.resources.dll",
         "lib/net461/zh-CN/UiPath.MicrosoftOffice365.Activities.resources.dll",
-        "uipath.microsoftoffice365.activities.1.3.0.nupkg.sha512",
+        "uipath.microsoftoffice365.activities.1.4.0.nupkg.sha512",
         "uipath.microsoftoffice365.activities.nuspec"
       ]
     },
@@ -5370,15 +5461,18 @@
       "BalaReva.Excel.Activities >= 2020.3.0 <= 2020.3.0",
       "Castle.Core >= 4.4.1 <= 4.4.1",
       "ClosedXML >= 0.95.3 <= 0.95.3",
+      "Email_Address_Validation.Activities >= 1.0.0 <= 1.0.0",
       "ExcelDataReader >= 3.6.0 <= 3.6.0",
       "MailKit >= 2.9.0 <= 2.9.0",
       "Mastek.Email.Activities >= 1.0.9 <= 1.0.9",
       "Microsoft.Activities.Extensions >= 2.0.6.9 <= 2.0.6.9",
       "Microsoft.Exchange.WebServices >= 2.2.0 <= 2.2.0",
+      "Outlook.Mail.Activities >= 1.0.2 <= 1.0.2",
       "UiPath.ComplexScenarios.Activities >= 1.1.3 <= 1.1.3",
       "UiPath.Excel.Activities >= 2.9.3 <= 2.9.3",
       "UiPath.Form.Activities >= 1.1.7 <= 1.1.7",
       "UiPath.Mail.Activities >= 1.9.3 <= 1.9.3",
+      "UiPath.MicrosoftOffice365.Activities >= 1.4.0 <= 1.4.0",
       "UiPath.System.Activities >= 20.10.1 <= 20.10.1",
       "UiPath.UIAutomation.Activities >= 20.10.5 <= 20.10.5",
       "UiPath.UIAutomationNext.Activities >= 20.4.3 <= 20.4.3",
@@ -5415,6 +5509,11 @@
             "target": "Package",
             "version": "[0.95.3, 0.95.3]"
           },
+          "Email_Address_Validation.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.0, 1.0.0]"
+          },
           "ExcelDataReader": {
             "include": "Runtime",
             "target": "Package",
@@ -5440,6 +5539,11 @@
             "target": "Package",
             "version": "[2.2.0, 2.2.0]"
           },
+          "Outlook.Mail.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.2, 1.0.2]"
+          },
           "UiPath.ComplexScenarios.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -5459,6 +5563,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[1.9.3, 1.9.3]"
+          },
+          "UiPath.MicrosoftOffice365.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.4.0, 1.4.0]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",

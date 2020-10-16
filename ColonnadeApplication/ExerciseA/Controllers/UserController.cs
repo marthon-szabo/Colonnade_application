@@ -22,20 +22,20 @@ namespace ExerciseA.Controllers
             this.userFactory = userFactory;
         }
 
-        public async Task<IActionResult> Create(string email, string name, string address, string phone, string city, string option, int zip)
+        public IActionResult Create(string email, string name, string address, string phone, string city, string option, int zip)
         {
-            User newUser = userFactory.CreateUserAsync(email, name, address, phone, city, option, zip).Result;
-            userRepo.AddUserAsync(newUser);
-            Response.Redirect($"/User/Actual?id={newUser.Id}");
+            User newUser = userFactory.CreateUser(email, name, address, phone, city, option, zip);
+            userRepo.AddUser(newUser);
 
-            return View();
+            return RedirectToAction("Actual", new { id = newUser.Id });
+        
         }
 
         public IActionResult Actual(string id)
         {
-            User user = userRepo.GetUserByIdAsync(Convert.ToInt32(id)).Result;
-            int? optionId = user.OptionId;
-            Option option = optionRepo.GetOptionByIdAsync(optionId).Result;
+            User user = userRepo.GetUserById(Convert.ToInt32(id));
+            int optionId = user.OptionId;
+            Option option = optionRepo.GetOptionById(optionId);
             ViewData["OptName"] = option.OptName;
             ViewData["AcInsLimit"] = option.AccidentInsuranceLimit.ToString("###,###,### Ft");
             ViewData["Cash"] = option.Cash.ToString("###,###,### Ft");

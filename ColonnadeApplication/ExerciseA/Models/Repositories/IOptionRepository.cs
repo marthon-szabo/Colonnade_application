@@ -7,7 +7,7 @@ namespace ExerciseA.Models.Repositories
 {
     public interface IOptionRepository
     {
-        public void AddOptionAsync(Option option);
-        public Task<Option> GetOptionByIdAsync(int? id);
+        public void AddOption(Option option);
+        public Option GetOptionById(int? id);
     }
 }

@@ -10,16 +10,15 @@ namespace ExerciseA.Models
         [Key]
         public int Id { get; set; }
 
-        [NotNull]
+        [DisallowNull]
         public string OptName { get; set; }
-        [NotNull]
+        [DisallowNull]
         public int AccidentInsuranceLimit { get; set; }
-
-        [NotNull]
+        [DisallowNull]
         public int Cash { get; set; }
-        [NotNull]
+        [DisallowNull]
         public int Luggage { get; set; }
-        [NotNull]
+        [DisallowNull]
         public int LuggageLimit { get; set; }
     }
 }

@@ -41,6 +41,16 @@
     },
     {
       "Package": {
+        "Id": "Email_Address_Validation.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\email_address_validation.activities/1.0.0\\lib/Email Address Validation Activity.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\email_address_validation.activities\\1.0.0"
+    },
+    {
+      "Package": {
         "Id": "ExcelDataReader",
         "Version": "3.6.0"
       },
@@ -114,8 +124,8 @@
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.logging.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.options/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.primitives/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph/1.12.0\\lib/net45/Microsoft.Graph.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core/1.12.0\\lib/net45/Microsoft.Graph.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph/1.19.0\\lib/net45/Microsoft.Graph.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core/1.19.0\\lib/net45/Microsoft.Graph.Core.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identity.client/4.14.0\\lib/net45/Microsoft.Identity.Client.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
@@ -131,6 +141,7 @@
         "C:\\Users\\DELL\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.componentmodel.annotations/4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.6.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.io.filesystem.primitives/4.0.1\\lib/net46/System.IO.FileSystem.Primitives.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll",
@@ -153,9 +164,9 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.Activities.Design.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.Activities.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.3.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.3.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.3.0\\lib/net461/UiPath.MicrosoftOffice365.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.Design.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Core.dll",
@@ -229,6 +240,17 @@
     },
     {
       "Package": {
+        "Id": "Outlook.Mail.Activities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities/1.0.2\\lib/MailMessage.Designer.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities/1.0.2\\lib/MailMessage.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities\\1.0.2"
+    },
+    {
+      "Package": {
         "Id": "UiPath.ComplexScenarios.Activities",
         "Version": "1.1.3"
       },
@@ -263,6 +285,47 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Form.Activities",
+        "Version": "1.1.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\castle.core/4.4.1\\lib/net45/Castle.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Wpf.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/UiPath.CEFSharpBundle.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/chrome_elf.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/d3dcompiler_47.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libEGL.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libGLESv2.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libcef.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/msvcp140.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libEGL.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libGLESv2.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.Activity.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.Activity.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Form.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Form.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.ActivityLibrary.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.1.1\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\1.1.7"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.9.3"
       },
@@ -289,6 +352,37 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities\\1.9.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MicrosoftOffice365.Activities",
+        "Version": "1.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\closedxml/0.95.3\\lib/net46/ClosedXML.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\documentformat.openxml/2.7.2\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\excelnumberformat/1.0.10\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\fastmember/1.3.0\\lib/net45/FastMember.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph/1.19.0\\lib/net45/Microsoft.Graph.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core/1.19.0\\lib/net45/Microsoft.Graph.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identity.client/4.14.0\\lib/net45/Microsoft.Identity.Client.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\mimekit/2.9.2\\lib/net46/MimeKit.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\portable.bouncycastle/1.8.5\\lib/net40/BouncyCastle.Crypto.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.6.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.io.filesystem.primitives/4.0.1\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.4.0\\lib/net461/UiPath.MicrosoftOffice365.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.4.0"
     },
     {
       "Package": {
@@ -462,47 +556,6 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipathteam.dynamicemail.activity/1.0.3\\lib/DynamicEmailAttachment.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipathteam.dynamicemail.activity\\1.0.3"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Form.Activities",
-        "Version": "1.1.7"
-      },
-      "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\castle.core/4.4.1\\lib/net45/Castle.Core.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Core.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Wpf.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/chrome_elf.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/d3dcompiler_47.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libcef.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libEGL.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libGLESv2.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/msvcp140.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/UiPath.CEFSharpBundle.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/vcruntime140.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libEGL.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libGLESv2.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.Activity.Design.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.Activity.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Callout.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Form.Activities.Design.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities/1.1.7\\lib/net461/UiPath.Form.Activities.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.ActivityLibrary.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.Form.Host.Local.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary/1.1.7\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.1.1\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll"
-      ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\1.1.7"
     }
   ],
   "Conflicts": [
@@ -621,6 +674,11 @@
     "DocX": {
       "Id": "DocX",
       "Version": "1.0.0.18",
+      "Dependencies": []
+    },
+    "Email_Address_Validation.Activities": {
+      "Id": "Email_Address_Validation.Activities",
+      "Version": "1.0.0",
       "Dependencies": []
     },
     "ExcelDataReader": {
@@ -1050,25 +1108,29 @@
     },
     "Microsoft.Graph": {
       "Id": "Microsoft.Graph",
-      "Version": "1.12.0",
+      "Version": "1.19.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Graph.Core",
-          "Item2": "[1.12.0, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[6.0.1, 12.0.0)"
+          "Item2": "[1.18.0, )"
         }
       ]
     },
     "Microsoft.Graph.Core": {
       "Id": "Microsoft.Graph.Core",
-      "Version": "1.12.0",
+      "Version": "1.19.0",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
-          "Item2": "[6.0.1, 12.0.0)"
+          "Item2": "[6.0.1, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[4.6.0, )"
         }
       ]
     },
@@ -1132,6 +1194,11 @@
         }
       ]
     },
+    "Outlook.Mail.Activities": {
+      "Id": "Outlook.Mail.Activities",
+      "Version": "1.0.2",
+      "Dependencies": []
+    },
     "Portable.BouncyCastle": {
       "Id": "Portable.BouncyCastle",
       "Version": "1.8.5",
@@ -1156,6 +1223,16 @@
       "Id": "System.ComponentModel.Annotations",
       "Version": "4.7.0",
       "Dependencies": []
+    },
+    "System.Diagnostics.DiagnosticSource": {
+      "Id": "System.Diagnostics.DiagnosticSource",
+      "Version": "4.6.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.3, )"
+        }
+      ]
     },
     "System.IO.Abstractions": {
       "Id": "System.IO.Abstractions",
@@ -1463,7 +1540,7 @@
     },
     "UiPath.MicrosoftOffice365.Activities": {
       "Id": "UiPath.MicrosoftOffice365.Activities",
-      "Version": "1.3.0",
+      "Version": "1.4.0",
       "Dependencies": [
         {
           "Item1": "BouncyCastle",
@@ -1487,15 +1564,15 @@
         },
         {
           "Item1": "Microsoft.Graph",
-          "Item2": "[1.12.0, )"
+          "Item2": "[1.19.0, )"
         },
         {
           "Item1": "Microsoft.Graph.Core",
-          "Item2": "[1.12.0, )"
+          "Item2": "[1.19.0, )"
         },
         {
           "Item1": "Microsoft.Identity.Client",
-          "Item2": "[2.7.1, )"
+          "Item2": "[4.14.0, )"
         },
         {
           "Item1": "MimeKit",
@@ -1515,7 +1592,7 @@
         },
         {
           "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.5.1, )"
+          "Item2": "[4.5.2, )"
         }
       ]
     },
@@ -1875,6 +1952,16 @@
         "C:\\Users\\DELL\\.nuget\\packages\\docx\\1.0.0.18\\lib\\net40\\DocX.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\docx\\1.0.0.18"
+    },
+    {
+      "Package": {
+        "Id": "Email_Address_Validation.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\email_address_validation.activities\\1.0.0\\lib\\Email Address Validation Activity.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\email_address_validation.activities\\1.0.0"
     },
     {
       "Package": {
@@ -2247,22 +2334,22 @@
     {
       "Package": {
         "Id": "Microsoft.Graph",
-        "Version": "1.12.0"
+        "Version": "1.19.0"
       },
       "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph\\1.12.0\\lib\\net45\\Microsoft.Graph.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph\\1.19.0\\lib\\net45\\Microsoft.Graph.dll"
       ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph\\1.12.0"
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph\\1.19.0"
     },
     {
       "Package": {
         "Id": "Microsoft.Graph.Core",
-        "Version": "1.12.0"
+        "Version": "1.19.0"
       },
       "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core\\1.12.0\\lib\\net45\\Microsoft.Graph.Core.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core\\1.19.0\\lib\\net45\\Microsoft.Graph.Core.dll"
       ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core\\1.12.0"
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core\\1.19.0"
     },
     {
       "Package": {
@@ -2359,6 +2446,17 @@
     },
     {
       "Package": {
+        "Id": "Outlook.Mail.Activities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities\\1.0.2\\lib\\MailMessage.Designer.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities\\1.0.2\\lib\\MailMessage.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\outlook.mail.activities\\1.0.2"
+    },
+    {
+      "Package": {
         "Id": "Portable.BouncyCastle",
         "Version": "1.8.5"
       },
@@ -2406,6 +2504,16 @@
         "C:\\Users\\DELL\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\lib\\net461\\System.ComponentModel.Annotations.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Diagnostics.DiagnosticSource",
+        "Version": "4.6.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\lib\\net46\\System.Diagnostics.DiagnosticSource.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0"
     },
     {
       "Package": {
@@ -2554,8 +2662,8 @@
       },
       "Assemblies": [
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.Core.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.Wpf.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.Wpf.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0"
     },
@@ -2602,8 +2710,8 @@
       },
       "Assemblies": [
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.Form.ActivityLibrary.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.Form.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.Form.Host.Local.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.Form.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.OutOfProcessUi.Common.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\1.1.7\\lib\\net461\\UiPath.OutOfProcessUi.Host.WCF.exe"
       ],
@@ -2636,14 +2744,14 @@
     {
       "Package": {
         "Id": "UiPath.MicrosoftOffice365.Activities",
-        "Version": "1.3.0"
+        "Version": "1.4.0"
       },
       "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.3.0\\lib\\net461\\UiPath.MicrosoftOffice365.Activities.Design.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.3.0\\lib\\net461\\UiPath.MicrosoftOffice365.Activities.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.3.0\\lib\\net461\\UiPath.MicrosoftOffice365.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.4.0\\lib\\net461\\UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.4.0\\lib\\net461\\UiPath.MicrosoftOffice365.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.4.0\\lib\\net461\\UiPath.MicrosoftOffice365.dll"
       ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.3.0"
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.microsoftoffice365.activities\\1.4.0"
     },
     {
       "Package": {

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="444,2742" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="498,3341" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -60,6 +60,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -67,7 +68,7 @@
       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="454,2637" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="508,3236" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
@@ -77,7 +78,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Use Browser Edge: Home Page - ExerciseA" sap:VirtualizedContainerService.HintSize="412,2547" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+    <uix:NApplicationCard DisplayName="Use Browser Edge: Home Page - ExerciseA" sap:VirtualizedContainerService.HintSize="466,2447" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -88,7 +89,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2332" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2232" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,9 +191,9 @@
                 <uix:TargetAnchorable BrowserURL="https://localhost:44377/" DesignTimeRectangle="413, 410, 76, 38" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Submit' check:text='Submit' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAqCAYAAAAkqNwKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVGhD7ZqxbsIwEIb7GFXpU/UNKnXp0D4EW1+EqcresYiBtWsG1A2mIgZYGK7+HZ9jG0cknIe03C99QrFjJ/44IwbfkEYUFShMJPDr+4ce3uZ0/1TR7eO7EgAncANHYbxAdOCmu+cPmrx80uR1roQYJ3ADR6FELxB2rbzcYMUDR3DF8QJhViuvB8YRXHG8QOzz7ADlBLjiqMALUIFCVKAQFShEBQpRgUJUoBAVKGR8Aqst7ehIiyrTJ2ZFi4NZ4Gad6buM4gKn9dHNwhko45oFzjZm8GFL06BtWu9HJDClEbqrV5m+fhQUuKa6xMKvW+CZl1nuTyqUx9VLd+0Fuu3GSbadrXbTZj9dmmfH4+L3CYTZ58S5RGRBgQYIQrp+Y3oLRMIqbO4J52Vxfhw/2yRuC+dJK25UFci4xSKpyAEC/TVjZexp5q65Att7XOVl2rqFjVIgwyLbRfcXmPkNTNq7BMYy/rRAkLygChxOtNBkG1rSLdsh0P6/DOT/Q4GmkqIFGVI5rtrSBSCxQCQQ7drChZYRmJtnGGUFuvFtMlvRViEH/R1beMkim8Riyglsv7DTZ/ShoMDrRAUKUYFCVKAQFShEBQpRgUJUoBAVKCQrUI+39aTreJsesOxH5wFLPeJ7BuMEbuAoe8QXQQfs4ibsc6UFTuAmlIdEAjXDowJFIfoFdQte4zJHglEAAAAASUVORK5CYII=" InformativeScreenshot="79c89b44069a4c866fdc3913a0da20d8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - ExerciseA' /&gt;" SearchSteps="FuzzySelector, Image" Text="Submit" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Home Page'" FileName="[string.Format(&quot;{0}\source\repos\Colonnade_application\exercise_b\screenshots\screenshot.png&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="358,240" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1">
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Actual -'" FileName="[string.Format(&quot;{0}\source\repos\Colonnade_application\exercise_b\screenshots\screenshot.png&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="358,140" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" SaveScreenshotTo="Clipboard">
               <uix:NTakeScreenshot.Target>
-                <uix:TargetAnchorable BrowserURL="https://localhost:44377/" DesignTimeRectangle="8, 79, 1920, 969" FriendlyName="'Home Page'" FullSelectorArgument="&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='HTML' type='' aaname=' ' check:text='Home Page - ExerciseA&amp;#xA;    &amp;#xA;    &amp;#xA;&amp;#xA;&amp;#xA;    &amp;#xA;        &amp;#xA;            &amp;#xA;                ExerciseA&amp;#xA;            ' /&gt;" ImageBase64="" InformativeScreenshot="b705d6043a914f8eb3701c060645848f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - ExerciseA' /&gt;" SearchSteps="FuzzySelector" Text="Home Page - ExerciseA&#xA;    &#xA;    &#xA;&#xA;&#xA;    &#xA;        &#xA;            &#xA;                ExerciseA" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='HTML' type='' /&gt;" />
+                <uix:TargetAnchorable BrowserURL="https://localhost:44377/User/Actual/117" DesignTimeRectangle="8, 79, 1920, 969" FriendlyName="'Actual -'" FullSelectorArgument="&lt;webctrl tag='HTML' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='HTML' type='' aaname=' ' check:text='Actual - ExerciseA&amp;#xA;    &amp;#xA;    &amp;#xA;&amp;#xA;&amp;#xA;    &amp;#xA;        &amp;#xA;            &amp;#xA;                ExerciseA&amp;#xA;               ' /&gt;" ImageBase64="" InformativeScreenshot="8000d43bcd6527d4ee22d18162d2ab50.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Actual - ExerciseA' /&gt;" SearchSteps="FuzzySelector" Text="Actual - ExerciseA&#xA;    &#xA;    &#xA;&#xA;&#xA;    &#xA;        &#xA;            &#xA;                ExerciseA" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='HTML' type='' /&gt;" />
               </uix:NTakeScreenshot.Target>
             </uix:NTakeScreenshot>
           </Sequence>
@@ -207,5 +208,28 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
+    <umab:OutlookApplicationCard Account="{x:Null}" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="466,659" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+      <umab:OutlookApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,481" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" Subject="{x:Null}" Account="[Outlook]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="412,391" sap2010:WorkflowViewState.IdRef="SendMailX_1" IsDraft="False" MaxBodyDocumentSizeMB="2" To="[string.Format(&quot;marthon-szabo@outlook.com{0}&quot;, Environment.NewLine)]">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">[ClipboardX.StringValue]</InArgument>
+                </scg:List>
+              </umab:SendMailX.Files>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:OutlookApplicationCard.Body>
+    </umab:OutlookApplicationCard>
   </ueab:SequenceX>
 </Activity>

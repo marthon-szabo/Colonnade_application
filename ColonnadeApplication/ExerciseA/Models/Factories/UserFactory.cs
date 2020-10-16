@@ -18,17 +18,11 @@ namespace ExerciseA.Models
             this.optionsFactory = optionsFactory;
             this.context = context;
         }
-        // TODO: Delete async
-        public async Task<User> CreateUserAsync(string email, string name, string address, string phone, string city, string option, int zip)
+
+        public User CreateUser(string email, string name, string address, string phone, string city, string option, int zip)
         {
-
-            int? userOption = optionsFactory.CreateOption(option);
-
-            if (userOption == null)
-            {
-                throw new ArgumentNullException("There is no argument for Option!");
-            }
-
+            int userOption = optionsFactory.CreateOption(option);
+            
             User newUser = new User
             {
                 Address = address,

@@ -32,9 +32,8 @@ namespace ExerciseA.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        // TODO: Not nullable!
         [DisallowNull]
-        public int? OptionId { get; set; }
+        public int OptionId { get; set; }
 
     }
 }
