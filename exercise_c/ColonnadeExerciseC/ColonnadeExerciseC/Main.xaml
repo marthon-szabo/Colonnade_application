@@ -161,7 +161,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;EUR&quot;)) OR CurrentRow.ByField(&quot;A&quot;) &gt; string.Format(&quot;USD&quot;)]" sap:VirtualizedContainerService.HintSize="468,476" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If Condition="[CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;PLN&quot;)) OR CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;EUR&quot;)) OR CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;CZK&quot;)) OR CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;UAH&quot;)) OR CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;RON&quot;)) OR CurrentRow.ByField(&quot;A&quot;).Contains(string.Format(&quot;BGN&quot;))]" sap:VirtualizedContainerService.HintSize="468,476" sap2010:WorkflowViewState.IdRef="If_3">
                               <If.Then>
                                 <Sequence sap:VirtualizedContainerService.HintSize="454,301" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                   <sap:WorkflowViewStateService.ViewState>
