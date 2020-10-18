@@ -21,6 +21,7 @@
     "UiPath.System.Activities": "[20.10.1]",
     "UiPath.UIAutomation.Activities": "20.10.5",
     "UiPath.UIAutomationNext.Activities": "[20.4.3]",
+    "UiPath.WebAPI.Activities": "[1.6.0]",
     "UiPath.Word.Activities": "[1.5.3]",
     "UiPathTeam.DynamicEmail.Activity": "[1.0.3]"
   },
